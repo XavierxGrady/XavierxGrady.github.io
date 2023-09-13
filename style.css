@@ -3,8 +3,9 @@ body {
     color: rgb(45, 45, 45);
     padding: 10px;
     font-family: arial;
-    background-image: url("old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg");
-
+}
+body {
+    background-image: url("https://welbornechurch.org/wp-content/uploads/2022/09/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall-300x149.jpg");
 }
 #all-contents {
   max-width: 800px;
