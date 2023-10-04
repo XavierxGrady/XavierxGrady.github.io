@@ -28,12 +28,12 @@ $(function () {
      * Comment the lines out to remove the grid
      */
 
-    // for (let i = 100; i < canvas.width; i += 100) {
-    //   createPlatform(i, canvas.height, -1, -canvas.height);
-    // }
-    // for (let i = 100; i < canvas.height; i += 100) {
-    //   createPlatform(canvas.width, i, -canvas.width, -1);
-    // }
+    for (let i = 100; i < canvas.width; i += 100) {
+      createPlatform(i, canvas.height, -1, -canvas.height);
+    }
+    for (let i = 100; i < canvas.height; i += 100) {
+      createPlatform(canvas.width, i, -canvas.width, -1);
+    }
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
@@ -43,17 +43,13 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-createPlatform(25, 650, 200, 20);
-createPlatform(525, 650, 200, 20);
-createPlatform(1000, 650, 200, 20);
-createPlatform(25, 450, 200, 20);
-createPlatform(525, 450, 200, 20);
-createPlatform(1000, 450, 200, 20);
-createPlatform(25, 250, 200, 20);
-createPlatform(525, 250, 200, 20);
-createPlatform(1000, 250, 200, 20);
-createPlatform(1300, 350, 100, 20);
-createPlatform(1300, 550, 100, 20);
+createPlatform(1, 650, 100, 20);
+createPlatform(200, 550, 100, 20);
+createPlatform(1,450, 100, 20);
+createPlatform(200, 350, 100, 20);
+createPlatform(1, 250, 100, 20);
+createPlatform(200,150, 500, 20);
+
 
 
 
@@ -73,9 +69,10 @@ createPlatform(1300, 550, 100, 20);
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
-createCannon("bottom", 300, 1000,100,50);
-createCannon("bottom", 825, 1000,100,50);
-createCannon("left", 650, .1,1000,50);
+createCannon("bottom", 300, 1000,20,20);
+createCannon("bottom", 825, 1000,20,20);
+createCannon("left", 650, .1,20,20);
+createCannon("right", 105, 1500,20,43.5);
 
 
 
