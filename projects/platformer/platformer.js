@@ -99,7 +99,7 @@ createCannon("right", 200, 1500,20,20);
 createCannon("bottom", 1000, 1000,20,20);
 createCannon("bottom", 1100, 2500,20,20);
 createCannon("bottom", 1200, 1000,20,20);
-createCannon("top", 1425, 1500,20,20);
+createCannon("top", 1400, 1500,20,20);
 
 
 
