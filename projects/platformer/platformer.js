@@ -48,11 +48,26 @@ createPlatform(200, 570, 100, 20);
 createPlatform(0,470, 100, 20);
 createPlatform(200, 370, 100, 20);
 createPlatform(0, 270, 100, 20);
-createPlatform(200,170, 500, 20);
+createPlatform(200,180, 500, 20);
 createPlatform(800,300, 100, 20);
-createPlatform(200,170, 500, 20);
 createPlatform(600, 400, 100, 20);
 createPlatform(800,500, 100, 20);
+createPlatform(800,500, 100, 20);
+createPlatform(600,600, 100, 20);
+createPlatform(700,680, 300, 20);
+createPlatform(800,500, 100, 20);
+createPlatform(300,190, 10, 700);
+createPlatform(600,190, 10, 700);
+createPlatform(1000,600, 10, 100);
+createPlatform(1100,500, 10, 100);
+createPlatform(1200,400, 10, 100);
+createPlatform(1000,600, 110, 10);
+createPlatform(1100,500, 110, 10);
+createPlatform(1200,400, 100, 10);
+createPlatform(1300,690, 110, 10);
+createPlatform(1000,600, 110, 10);
+createPlatform(900,100, 10, 420);
+createPlatform(1300,400, 10, 300);
 
 
 
@@ -65,8 +80,11 @@ createPlatform(800,500, 100, 20);
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-    createCollectable("steve", 225, 100, 1, 0.7);
-    createCollectable("grace", 625, 275, 1, 0.7);
+    createCollectable("database", 225, 100, 1, 0.7);
+    createCollectable("database", 625, 275, 1, 0.7);
+    createCollectable("database", 225, 400, 1, 0.7);
+    createCollectable("database", 1350, 500, 1, 0.7);
+    createCollectable("database", 725, 500, 1, 0.7);
 
 
     // TODO 3
@@ -75,9 +93,13 @@ createPlatform(800,500, 100, 20);
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 createCannon("bottom", 300, 1000,20,20);
-createCannon("bottom", 800, 1000,20,20);
+createCannon("bottom", 700, 1000,20,20);
 createCannon("left", 650, .1,20,20);
 createCannon("right", 200, 1500,20,20);
+createCannon("bottom", 1000, 1000,20,20);
+createCannon("bottom", 1100, 2500,20,20);
+createCannon("bottom", 1200, 1000,20,20);
+createCannon("top", 1425, 1500,20,20);
 
 
 
