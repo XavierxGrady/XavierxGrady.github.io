@@ -1,11 +1,11 @@
 body {
-    background: rgb(42, 44, 44);
-    color: rgb(45, 45, 45);
+    background: rgb(28, 28, 28);
+    color: rgb(255, 255, 255);
     padding: 10px;
     font-family: arial;
 }
 body {
-    background-image: url("https://welbornechurch.org/wp-content/uploads/2022/09/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall-300x149.jpg");
+    background-image: url("https://img.freepik.com/free-photo/marble-tile-durable-material-background_1253-850.jpg?w=740&t=st=1699495497~exp=1699496097~hmac=8c126be810dbf22db36df68a7bf873bd5b957066787691f7d7617814612334da ");
 }
 #all-contents {
   max-width: 800px;
@@ -14,7 +14,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(0, 0, 0);
+    background: rgb(28, 28, 28);
    margin: 0 auto;
    margin-bottom: 20px;
     display: flex;
@@ -36,12 +36,12 @@ h1 {
 }
 a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
 }
 
 /* main container area beneath menu */
 main {
-    background: rgb(255, 255, 255);
+    background: rgb(28, 28, 28);
     display: flex;
 }
 .sidebar {
@@ -66,7 +66,7 @@ h2, h3 {
 }
         /* portfolio styles */
          .content h1 {
-            color: black;
+            color: rgb(255, 252, 252);
         }
 
         #portfolio {
@@ -75,17 +75,22 @@ h2, h3 {
         }
 
         #portfolio li {
-            background: #ffffff;
+            background: rgb(28, 28, 28);
             padding: 10px;
             border-radius: 10px;
             margin-bottom: 10px;
+            transition: 150ms;
+            box-shadow: 6px 5px #ffffff4b;
         }
 
-        #portfolio li:hover {
-            background: #464040;
+        #portfolio :hover {
+            background: rgb(255, 255, 255); color: rgb(0, 0, 0);
         }
 
         #portfolio a {
             text-decoration: none;
-            color: #000000;
+            color: #ffffff;
         }
+        ::selection{
+            background: red;
+          }
