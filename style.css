@@ -94,10 +94,6 @@ h2, h3 {
         ::selection{
             background: red;
           }
-          img{
-            max-width: ;
-          }
-          /*add width and height to photos*/
           * {
             box-sizing: border-box;
           }
@@ -115,7 +111,7 @@ h2, h3 {
           }
           
           h1 {
-            font-size: 50px;
+            font-size: 40px;
             word-break: break-all;
           }
           
