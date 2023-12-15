@@ -6,10 +6,11 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
+			color: white;
 			width: 70px;
 			height: 70px;
 			background-color: rgb(0, 0, 0);
-			font-size: 300%;
+			font-size: 250%;
 			text-align: center;
 			user-select: none;
 			display: block;
@@ -20,13 +21,21 @@
 		.board{
 			height: 100vh;
 		}
+		body{
+			background-image: url("https://wallpapercave.com/wp/wp2993789.jpg");
+			background-color: #000000;
+		}
+	
+div {
+  border: double;
+}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 
 </head>
 <body class="board">
 	<!-- HTML for the box -->
-	<div class="box">?</div>
+	<div class="box">Click</div>
 	
 
 	<script>
@@ -49,8 +58,9 @@
 			box.on('click', handleBoxClick);
 
 			// moves the Box to a new position on the screen along the X-Axis
-			function moveBoxTo(newPositionX) {
+			function moveBoxTo(newPositionX, newPositionY) {
 				box.css("left", newPositionX);
+				box.css("top", newPositionY);
 			}
 
 			// changes the text displayed on the Box
@@ -65,8 +75,10 @@
 			// TODO 2 - Variable declarations 
 			var positionX = 0
 			var points = 0
-
-			
+			var positionY;
+			var speedY;
+			var boardHeight = jQuery(window).height();
+			var randNum = Math.random() * 100;
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -75,7 +87,7 @@
 			function update() {
 				/* Your Code to increase positionX by 10 Here */
 				positionX = positionX + speed;
-				moveBoxTo(positionX);
+				moveBoxTo(positionX, positionY);
 				if(positionX > boardWidth){
 					speed = -speed;
 				}
@@ -95,10 +107,15 @@
 				//code increase the points var by 1
 				points = points + 1
 				changeBoxText(points);
-				speed = speed + 10;
+				if(speed > 0){
+					speed = speed + 3
+				}
+				else if(speed < 0){
+					speed = speed - 3
+				}
 
 			};
 		})();
-	</script>
+	</script>	   
 </body>
 </html>
